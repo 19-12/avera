@@ -1,0 +1,9 @@
+const WomenCollection = () => {
+  return (
+    <div className="container mx-auto px-6 py-20">
+      <h1 className="text-3xl font-bold">Woman Collection</h1>
+    </div>
+  );
+};
+
+export default WomenCollection;

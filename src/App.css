@@ -1,0 +1,133 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+
+.popup-content img.popup-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.popup-content .close-btn {
+position: absolute;
+    top: -13px;
+    right: 10px;
+    font-size: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.popup-content input {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.popup-content button {
+  padding: 8px 16px;
+  background: #e91e63;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ef4444; /* red-500 */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* 🔹 Swiper navigation arrows custom style */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ec4899;        /* 🔥 Pink color (Tailwind pink-500) */
+  width: 30px;          /* icon box width */
+  height: 30px;         /* icon box height */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px;      /* 🔥 icon size (default ~44px থাকে) */
+  font-weight: bold;
+}
