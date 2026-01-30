@@ -5,46 +5,51 @@ import "swiper/css/navigation";
 
 import NewArrivalProductCard from "./NewArrivalProductCard";
 import bannerImg from "/src/assets/images/products/women-large.jpg";
+import p1 from "../assets/images/products/p1.jpg";
+import p2 from "../assets/images/products/p2.jpg";
+import p3 from "../assets/images/products/p3.jpg";
+import p4 from "../assets/images/products/p4.jpg";
+import p5 from "../assets/images/products/p5.jpg";
+
 
 // PRODUCTS DATA
 const products = [
   {
-    id: 101,   // 🔥 আলাদা range, conflict হবে না
-    image: "/src/assets/images/products/p1.jpg",
+    id: 101,
+    image: p1,
     title: "Guangzhou sweater",
     price: 13,
     category: "Shoes",
   },
   {
     id: 102,
-    image: "/src/assets/images/products/p4.jpg",
+    image: p4,
     title: "Pure Pineapple",
     price: 34,
     category: "Towel",
   },
   {
     id: 103,
-    image: "/src/assets/images/products/p3.jpg",
+    image: p3,
     title: "Converse Shoes",
     price: 29,
     category: "Shoes",
   },
   {
     id: 104,
-    image: "/src/assets/images/products/p2.jpg",
+    image: p2,
     title: "Stylish Handbag",
     price: 45,
     category: "HandBag",
   },
   {
     id: 105,
-    image: "/src/assets/images/products/p5.jpg",
+    image: p5,
     title: "Elegant Dress",
     price: 55,
     category: "Clothing",
   },
 ];
-
 
 const NewArrivalSection = () => {
   const handleAddToCart = (product) => {
