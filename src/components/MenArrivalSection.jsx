@@ -5,45 +5,52 @@ import "swiper/css/navigation";
 
 import NewArrivalProductCard from "./NewArrivalProductCard";
 import menBannerImg from "/src/assets/images/products/men-large.jpg";
+import m1 from "../assets/images/products/m1.jpg";
+import m2 from "../assets/images/products/m2.jpg";
+import m3 from "../assets/images/products/m3.jpg";
+import m4 from "../assets/images/products/m4.jpg";
+import m5 from "../assets/images/products/m5.jpg";
+
 
 // 🔥 MEN PRODUCTS DATA
 const menProducts = [
   {
     id: 201,
-    image: "/src/assets/images/products/m1.jpg",
+    image: m1,
     title: "Classic Men's Jacket",
     price: 49,
     category: "Clothing",
   },
   {
     id: 202,
-    image: "/src/assets/images/products/m2.jpg",
+    image: m2,
     title: "Leather Backpack",
     price: 39,
     category: "HandBag",
   },
   {
     id: 203,
-    image: "/src/assets/images/products/m3.jpg",
+    image: m3,
     title: "Men Sneakers",
     price: 29,
     category: "Shoes",
   },
   {
     id: 204,
-    image: "/src/assets/images/products/m4.jpg",
+    image: m4,
     title: "Casual Shirt",
     price: 25,
     category: "Clothing",
   },
   {
     id: 205,
-    image: "/src/assets/images/products/m5.jpg",
+    image: m5,
     title: "Formal Watch",
     price: 65,
     category: "Accessories",
   },
 ];
+
 
 const MenArrivalSection = () => {
   return (
